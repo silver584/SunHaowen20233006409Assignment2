@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_wakamole_text"
+
+        android:contentDescription="Whack-a-Mole Title"/>
+    <!-- 分数显示 -->
+    <TextView
+        android:id="@+id/tvFinalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 12"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#6750A4"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 输入姓名 -->
+    <EditText
+        android:id="@+id/etPlayerName"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:hint="Enter name"
+        android:backgroundTint="#6750A4"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <!-- 选择头像颜色 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avatar Colour"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="12dp" />
+
+    <RadioGroup
+        android:id="@+id/rgAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/rbGrey"   android:text="Grey"   android:tag="@drawable/img_grey_mole"  android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        <RadioButton android:id="@+id/rbBlue"   android:text="Blue"   android:tag="@drawable/img_blue_mole"  android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        <RadioButton android:id="@+id/rbOrange" android:text="Orange" android:tag="@drawable/img_orange_mole" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        <RadioButton android:id="@+id/rbGreen"  android:text="Green"  android:tag="@drawable/img_green_mole" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        <RadioButton android:id="@+id/rbPurple" android:text="Purple" android:tag="@drawable/img_purple_mole" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        <RadioButton android:id="@+id/rbPink"   android:text="Pink"   android:tag="@drawable/img_pink_mole" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+    </RadioGroup>
+
+    <!-- 提交按钮 -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:backgroundTint="#6750A4"
+        android:textColor="#FFFFFF"/>
+
+
+</LinearLayout>
