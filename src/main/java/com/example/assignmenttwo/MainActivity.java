@@ -17,22 +17,16 @@ public class MainActivity extends AppCompatActivity {
         Button btnPlay = findViewById(R.id.btnPlay);
         Button btnLeaderboard = findViewById(R.id.btnLeaderboard);
 
-        // Button click listener to go to the game activity
-        btnPlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, GameActivity.class);
-                startActivity(intent);
-            }
+        // Set up the button to start the game
+        btnPlay.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, GameActivity.class);
+            startActivity(intent);
         });
 
-        // Button click listener to go to the leaderboard activity
-        btnLeaderboard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LeaderboardActivity.class);
-                startActivity(intent);
-            }
+        // Set up the button to open the leaderboard
+        btnLeaderboard.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, LeaderboardActivity.class);
+            startActivity(intent);
         });
     }
 }
